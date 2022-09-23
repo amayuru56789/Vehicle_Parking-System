@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="ParkingContext" prefHeight="400.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingFormController">
+   <children>
+      <JFXComboBox fx:id="cmbId" layoutX="35.0" layoutY="29.0" onAction="#cmbOnAction" prefHeight="25.0" prefWidth="133.0" />
+      <TableView fx:id="tblPark" layoutX="33.0" layoutY="81.0" prefHeight="294.0" prefWidth="624.0" visible="false">
+        <columns>
+          <TableColumn fx:id="colNo" prefWidth="180.0" text="Vehicle Number" />
+          <TableColumn fx:id="colType" prefWidth="150.0" text="Vehicle Type" />
+            <TableColumn fx:id="colSlot" prefWidth="107.0" text="Parking Slot" />
+            <TableColumn fx:id="colTime" prefWidth="186.0" text="Parked Time" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="241.0" layoutY="29.0" onAction="#openVehicleFormOnAction" prefHeight="33.0" prefWidth="93.0" style="-fx-border-color: blue;" text="Add Vehicle" />
+      <JFXButton buttonType="RAISED" layoutX="405.0" layoutY="28.0" onAction="#DriverFormOnAction" prefHeight="33.0" prefWidth="93.0" style="-fx-border-color: blue;" text="Add Driver" />
+      <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="563.0" layoutY="28.0" onAction="#BackToLogin" prefHeight="33.0" prefWidth="93.0" style="-fx-border-color: blue;" text="Log Out" />
+      <TableView fx:id="tblDelivery" layoutX="43.0" layoutY="91.0" prefHeight="294.0" prefWidth="624.0">
+         <columns>
+            <TableColumn fx:id="colNo1" prefWidth="153.0" text="Vehicle Number" />
+            <TableColumn fx:id="colType1" prefWidth="100.0" text="Vehicle Type" />
+            <TableColumn fx:id="colSlot1" prefWidth="215.0" text="Driver Name" />
+            <TableColumn fx:id="colTime1" prefWidth="155.0" text="Left Time" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

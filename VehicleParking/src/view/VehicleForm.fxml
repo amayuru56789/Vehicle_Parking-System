@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="VehicleContext" prefHeight="342.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VehicleFormController">
+   <children>
+      <Text layoutX="78.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Number">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="68.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Weight">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="68.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of passengers">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="396.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Type">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtNo" layoutX="189.0" layoutY="49.0" promptText="Vehicle number" />
+      <JFXTextField fx:id="txtWeight" layoutX="190.0" layoutY="122.0" promptText="Weight" />
+      <JFXTextField fx:id="txtPassenger" layoutX="190.0" layoutY="191.0" promptText="Passengers" />
+      <ComboBox fx:id="cmbType" layoutX="483.0" layoutY="56.0" prefWidth="150.0" promptText="Type" />
+      <JFXButton buttonType="RAISED" layoutX="520.0" layoutY="219.0" onAction="#AddVehicleOnAction" prefHeight="32.0" prefWidth="92.0" style="-fx-background-color: blue;" text="Add Vehicle" textFill="#e4dcdc">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>
